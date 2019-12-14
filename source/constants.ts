@@ -4,6 +4,15 @@ export const BRAND_YELLOW: string   = '#94CD24';
 export const BRAND_GREEN: string    = '#036A38';
 export const BRAND_COLOR: string    = '#4A9B2E';
 
+export const AgeRating: Flags = {
+    General:                    0,
+    Children:                   1 << 0,
+    ParentalGuidance:           1 << 1,
+    Teen:                       1 << 2,
+    Mature:                     1 << 3,
+    Adult:                      1 << 4
+}
+
 export const Category: Flags = {
     'Unknown':                  0,
     'Auto & Vehicles':          1 << 10,
