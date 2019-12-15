@@ -32,9 +32,10 @@ export class Reporter {
         return String(this.colors['log'](thisStamp));
     }
     private console(type: string, name: string, data: any): void {
+        let _this: this = this;
         let thisName: string = name.toUpperCase();
         let colorName = function(): string {
-            return this.colors[type](thisName);
+            return _this.colors[type](thisName);
         }
         let thisStamp: string = this.timestamp();
         console.log(`[${colorName()}][${thisStamp}]: ${data}`);
