@@ -30,6 +30,7 @@
     "helmet": "^3.21.2",
     "howler": "^2.1.2",
     "jquery": "^3.4.1",
+    "markdown-tree": "0.0.0",
     "moment": "^2.24.0",
     "noty": "^3.2.0-beta",
     "react": "^16.12.0",
