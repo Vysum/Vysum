@@ -28,6 +28,9 @@ route.get('/vendor/moment', nodePath('moment','min'));
 // Babel
 route.get('/vendor/babel', nodePath('babel-standalone'));
 
+// Video.JS
+route.get('/vendor/videojs', nodePath('video.js','dist'));
+
 // React
 route.get('/vendor/react', nodePath('react','umd'));
 route.get('/vendor/react-dom', nodePath('react-dom','umd'));
