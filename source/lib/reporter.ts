@@ -42,7 +42,7 @@ export class Reporter {
     }
     private write(type: string, name: string, data: any): void {
         let thisName: string = name.toUpperCase();
-        let thisStamp: string = this.timestamp();
+        let thisStamp: string = moment().format('LLL');
         let thisType: string = type.toUpperCase();
         this.file.write(`[${thisType}][${thisName}][${thisStamp}]: ${data}\n`);
     }
