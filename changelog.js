@@ -12,7 +12,7 @@ const changelog = () => {
 	}));
 	const type = `{ version: string; changes: string[]; }[]`;
 	const code = `export const CHANGELOG: ${type} = ${JSON.stringify(object, null, 2)};\n`;
-	fs.writeFile('source/changelog.ts', code);
+	fs.writeFileSync('source/changelog.ts', code);
 };
 
 changelog();
