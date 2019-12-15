@@ -32,3 +32,11 @@ export interface Video {
     stream: boolean;
 }
 
+export interface PugSettings {
+    title: string;
+    description: string;
+    image: string;
+}
+export interface PugSettingList {
+    [key: string]: PugSettings;
+}
