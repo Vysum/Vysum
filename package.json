@@ -6,7 +6,8 @@
   "scripts": {
     "setup": "npm install -d && npm i -g -d typescript",
     "ts": "tsc --rootDir source --outDir build",
-    "build": "npm run ts"
+    "changelog": "node ./changelog.js",
+    "build": "npm run changelog && npm run ts"
   },
   "repository": {
     "type": "git",
