@@ -20,3 +20,6 @@ appCore.get('/', (request: any, response: any) => {
     response.send({ status: 200 });    
 });
 
+serverCore.listen(mainPort, function() {
+    console.log('Now online.')
+})
