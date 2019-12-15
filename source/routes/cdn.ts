@@ -8,31 +8,31 @@ function nodePath(...parts: string[]): express.static {
 }
 
 // Website Assets
-route.get('/assets', express.static(pathTo('assets')));
+route.use('/assets', express.static(pathTo('assets')));
 
 // jQuery
-route.get('/vendor/jquery', nodePath('jquery', 'dist'));
+route.use('/vendor/jquery', nodePath('jquery', 'dist'));
 
 // Bootstrap
-route.get('/vendor/bootstrap', nodePath('bootstrap','dist'));
+route.use('/vendor/bootstrap', nodePath('bootstrap','dist'));
 
 // Howler
-route.get('/vendor/howler', nodePath('howler','dist'));
+route.use('/vendor/howler', nodePath('howler','dist'));
 
 // Noty
-route.get('/vendor/noty', nodePath('noty','lib'));
+route.use('/vendor/noty', nodePath('noty','lib'));
 
 // Moment
-route.get('/vendor/moment', nodePath('moment','min'));
+route.use('/vendor/moment', nodePath('moment','min'));
 
 // Babel
-route.get('/vendor/babel', nodePath('babel-standalone'));
+route.use('/vendor/babel', nodePath('babel-standalone'));
 
 // Video.JS
-route.get('/vendor/videojs', nodePath('video.js','dist'));
+route.use('/vendor/videojs', nodePath('video.js','dist'));
 
 // React
-route.get('/vendor/react', nodePath('react','umd'));
-route.get('/vendor/react-dom', nodePath('react-dom','umd'));
+route.use('/vendor/react', nodePath('react','umd'));
+route.use('/vendor/react-dom', nodePath('react-dom','umd'));
 
 export = route;
