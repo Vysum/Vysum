@@ -29,9 +29,40 @@ appCore.get('/_status/:code', function(request: any, response: any) {
     response.send(request.params.code);
 })
 
+// Creator profiles
+appCore.get('/creator/:id', function(request: any, response: any) {
+})
+// Creator Settings
+appCore.get('/creator/:id/settings', function(request: any, response: any) {
+})
+// Latest Uploads
+appCore.get('/latest', function(request: any, response: any) {
+})
+// Watching
+appCore.get('/watch', function(request: any, response: any) {
+})
+// Tech or Account Support
+appCore.get('/support', function(request: any, response: any) {
+})
+// Privacy Policy
+appCore.get('/privacy', function(request: any, response: any) {
+})
+// Terms of Service
+appCore.get('/terms', function(request: any, response: any) {
+})
+// Discord Invite
+appCore.get('/discord', function(request: any, response: any) {
+    response.redirect('https://discord.gg/ydBgKgm');
+})
+
+// Server Boot Messages
 serverCore.listen(mainPort, function() {
     let bootdiff: string = ((Date.now() - startup) / 1000).toFixed(2);
     report.success('server', `Server Started`);
     report.success('server', `Started in: ${bootdiff}sec(s).`);
     report.success('server', `Listening on PORT: ${mainPort}`);
+})
+
+// Socket Relays
+io.on('connection', function(socket: any) {
 })
