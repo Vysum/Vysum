@@ -24,3 +24,5 @@ class icon extends React.Component {
         )
     }
 }
+// <icon type="brand" name="discord" color="#7289da" />
+// <icon type="duotone" name="book" primary="red" secondary="blue" />
