@@ -4,7 +4,9 @@
   "description": "TBD",
   "main": "./build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "npm install -d && npm i -g -d typescript",
+    "ts": "tsc --rootDir source --outDir build",
+    "build": "npm run ts"
   },
   "repository": {
     "type": "git",
