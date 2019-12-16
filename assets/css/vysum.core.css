@@ -9,26 +9,41 @@
     --color-danger: #ad0e0e;
     --color-warning: #e4a700;
     --color-success: #45a021;
-    --color-link: #2626b4;
-    --color-link-hover: #267bb4;
+    --color-info: #4747c2;
+
+    --color-rating-children: #4747c2;
+    --color-rating-general: #45a021;
+    --color-rating-pg: #94CD24;
+    --color-rating-teen: #e4a700;
+    --color-rating-mature: #ad0e0e;
+
     --font-brand: 'Orbitron';
 }
 
 /* Blue Shadow Removal */
-.form-control:focus {
+.form-control:focus, button:focus, 
+input:focus, textarea:focus,
+video:focus, audio:focus {
     box-shadow: none !important;
     outline: none !important;
-    border-left: 2px solid var(--color-brand-main) !important;
 }
 
 /* Link Colors */
 a, a:visited { 
-    color: var(--color-link);
-    text-decoration: none;
+    color: var(--color-brand-main);
+    text-decoration: none !important;
     transition: all 0.5s;
 }
 a:hover, a:active {
-    color: var(--color-link-hover);
+    color: var(--color-brand-green);
+}
+
+/* Line Break Correction */
+hr { 
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important; 
 }
 
 /* Noty Colors */
@@ -53,6 +68,7 @@ a:hover, a:active {
 .font-brand { font-family: var(--font-brand) !important; }
 
 /* Background Colors */
+.bg-primary { background-color: var(--color-brand-main) !important; }
 .bg-dark { background-color: var(--color-dark) !important; }
 .bg-black { background-color: var(--color-black) !important; }
 .bg-light { background-color: var(--color-light) !important; }
@@ -61,9 +77,10 @@ a:hover, a:active {
 .bg-warning { background-color: var(--color-warning) !important; }
 .bg-success { background-color: var(--color-success) !important; }
 .bg-brand { background-color: var(--color-brand-main) !important; }
-.bg-gradient { background: linear-gradient(to left, var(--color-brand-green), var(--color-brand-yellow)) !important; }
+.bg-gradient { background: linear-gradient(to right, var(--color-brand-green), var(--color-brand-yellow)) !important; }
 
 /* Text Colors */
+.text-primary { color: var(--color-brand-main) !important; }
 .text-dark { color: var(--color-dark) !important; }
 .text-black { color: var(--color-black) !important; }
 .text-light { color: var(--color-light) !important; }
@@ -74,7 +91,8 @@ a:hover, a:active {
 .text-brand { color: var(--color-brand-main) !important; }
 
 /* Button Colors */
-.btn { color: var(--color-light) !important; }
+.btn { color: var(--color-light) !important; border: 0 !important; }
+.btn-primary { background-color: var(--color-brand-main) !important; }
 .btn-dark { background-color: var(--color-dark) !important; }
 .btn-black { background-color: var(--color-black) !important; }
 .btn-light { background-color: var(--color-light) !important; }
@@ -83,9 +101,10 @@ a:hover, a:active {
 .btn-warning { background-color: var(--color-warning) !important; }
 .btn-success { background-color: var(--color-success) !important; }
 .btn-brand { background-color: var(--color-brand-main) !important; }
-.btn-gradient { background: linear-gradient(to left, var(--color-brand-green), var(--color-brand-yellow)) !important; }
+.btn-gradient { background: linear-gradient(to right, var(--color-brand-green), var(--color-brand-yellow)) !important; }
 
 /* Badge Colors */
+.badge-primary { background-color: var(--color-brand-main) !important; }
 .badge-dark { background-color: var(--color-dark) !important; }
 .badge-black { background-color: var(--color-black) !important; }
 .badge-light { background-color: var(--color-light) !important; }
@@ -94,4 +113,15 @@ a:hover, a:active {
 .badge-warning { background-color: var(--color-warning) !important; }
 .badge-success { background-color: var(--color-success) !important; }
 .badge-brand { background-color: var(--color-brand-main) !important; }
-.badge-gradient { background: linear-gradient(to left, var(--color-brand-green), var(--color-brand-yellow)) !important; }
+.badge-gradient { background: linear-gradient(to right, var(--color-brand-green), var(--color-brand-yellow)) !important; }
+
+.badge-rating-general { background-color: var(--color-success) !important; }
+.badge-rating-pg { background-color: var(--color-brand-yellow) !important; }
+.badge-rating-children { background-color: var(--color-info) !important; }
+
+
+/* Video Size Repair */
+.video-js {
+    height: 45em !important;
+    width: 100% !important; 
+}
