@@ -9,6 +9,8 @@ export interface UserAccount {
     verified: boolean;
     mobile: string;
     address: string;
+    birthdate: string;
+    age: number;
     mfaEnabled: boolean;
     catagories: number;
     rating: number;
