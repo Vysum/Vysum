@@ -1,9 +1,5 @@
 import { AgeRatings } from './constants';
 
-/**
- * Returns a Value of the given flag and lower
- * @param key The age rating
- */
 export function renderAgeFlag(key: string): number {
     let keys: string[] = Object.keys(AgeRatings);
     let response: number = 0;
@@ -17,12 +13,15 @@ export function renderAgeFlag(key: string): number {
     return response;
 }
 
-/**
- * Check if flag has a value
- * @param flag The flag to look for
- * @param flags The total flags
- */
 export function hasFlag(flag: number, flags: number): boolean {
     if(flags & flag) { return true; }
     else { return false }
+}
+
+export function randomString(length: number, characters: string): string {
+    let result: string = String()
+    for(let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result
 }
