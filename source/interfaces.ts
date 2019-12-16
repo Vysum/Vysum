@@ -23,11 +23,13 @@ export interface SignUpData {
     password: string;
     age: string;
     birthdate: string;
+    address: string;
 }
 
 export interface LoginData {
     email: string;
     password: string;
+    address: string;
 }
 
 export interface Video {
