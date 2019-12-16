@@ -9,6 +9,10 @@ export interface UserAccount {
     verified: boolean;
     mobile: string;
     address: string;
+    avatar: string;
+    banner: string;
+    about: string;
+    socialMedia: UserSocial[];
     birthdate: string;
     age: number;
     mfaEnabled: boolean;
@@ -17,6 +21,11 @@ export interface UserAccount {
     views: number;
     supporters: number;
     flags: number;
+}
+
+export interface UserSocial {
+    label: string;
+    link: string;
 }
 
 export interface SignUpData {
