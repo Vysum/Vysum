@@ -17,6 +17,7 @@ const io: ioSockets = ioSockets(serverCore);
 const report: Reporter = new Reporter();
 const startup: number = Date.now();
 
+appCore.set('view engine', 'pug')
 appCore.use(helmet());
 appCore.use(cookieParse());
 appCore.use(bodyParse.urlencoded({ extended: false }));
@@ -24,11 +25,15 @@ appCore.use(bodyParse.json());
 
 appCore.use('/', cdnRoute);
 
+// Force a status code
 appCore.get('/_status/:code', function(request: any, response: any) {
     report.info('status', `Response requested: ${request.params.code}`);
     response.send(request.params.code);
 })
-
+// HomePage
+appCore.get('/', function(request: any, response: any) {
+    response.render('index');
+})
 // Creator profiles
 appCore.get('/creator/:id', function(request: any, response: any) {
 })
@@ -40,6 +45,9 @@ appCore.get('/latest', function(request: any, response: any) {
 })
 // Watching
 appCore.get('/watch', function(request: any, response: any) {
+})
+appCore.get('/v/:video', function(request: any, response: any) {
+    response.redirect('/watch?v=' + request.params.video);
 })
 // Tech or Account Support
 appCore.get('/support', function(request: any, response: any) {
