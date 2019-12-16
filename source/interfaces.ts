@@ -36,7 +36,6 @@ export interface SignUpData {
     email: string;
     username: string;
     password: string;
-    age: string;
     birthdate: string;
     address: string;
 }
@@ -52,6 +51,7 @@ export interface Video {
     author: string;
     title: string;
     description: string;
+    thumbnail?: string;
     uploaded: number;
     tags: string[];
     rating: number;
