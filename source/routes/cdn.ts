@@ -16,6 +16,9 @@ route.use('/vendor/jquery', nodePath('jquery', 'dist'));
 // Bootstrap
 route.use('/vendor/bootstrap', nodePath('bootstrap','dist'));
 
+// FontAwesome
+route.use('/vendor/fontawesome', nodePath('@fortawesome','fontawesome-pro'));
+
 // Howler
 route.use('/vendor/howler', nodePath('howler','dist'));
 
