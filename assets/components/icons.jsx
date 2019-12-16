@@ -20,9 +20,14 @@ class icon extends React.Component {
             colorIcon = 'color: ' + this.props.color + ';';
         }
         return (
-            <i className={classList} style={colorIcon + styleList}></i>
+            <i 
+                data-toggle="tooltip" 
+                title={this.props.title || ''} 
+                className={classList} 
+                style={colorIcon + styleList}
+            ></i>
         )
     }
 }
-// <icon type="brand" name="discord" color="#7289da" />
+// <icon type="brand" name="discord" color="#7289da" title="Discord" />
 // <icon type="duotone" name="book" primary="red" secondary="blue" />
