@@ -9,11 +9,14 @@ export interface UserAccount {
     verified: boolean;
     mobile: string;
     address: string;
+    url: string;
     avatar: string;
     banner: string;
     about: string;
     socialMedia: UserSocial[];
     birthdate: string;
+    token: string;
+    streamKey: string;
     age: number;
     mfaEnabled: boolean;
     catagories: number;
