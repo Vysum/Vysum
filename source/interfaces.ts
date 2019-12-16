@@ -10,6 +10,7 @@ export interface UserAccount {
     mobile: string;
     address: string;
     url: string;
+    trailer: string | null;
     avatar: string;
     banner: string;
     about: string;
