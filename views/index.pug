@@ -21,9 +21,10 @@ html(lang="en-US")
         link(rel="stylesheet", href="/vendor/videojs/themes/forest/index.css")
         link(rel="stylesheet", href="/assets/css/vysum.core.css")
     
-    body
+    body.bg-black.text-light
         div#appMount(style="margin: 0; padding: 0; width: 100%; height: 100%;")
             include _navbar.pug
+            include _watch.pug
 
 
         script(type="text/javascript", src="/vendor/jquery/jquery.min.js")
