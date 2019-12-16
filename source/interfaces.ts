@@ -8,12 +8,26 @@ export interface UserAccount {
     email: string;
     verified: boolean;
     mobile: string;
+    address: string;
     mfaEnabled: boolean;
     catagories: number;
     rating: number;
     views: number;
     supporters: number;
     flags: number;
+}
+
+export interface SignUpData {
+    email: string;
+    username: string;
+    password: string;
+    age: string;
+    birthdate: string;
+}
+
+export interface LoginData {
+    email: string;
+    password: string;
 }
 
 export interface Video {
