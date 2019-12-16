@@ -30,6 +30,7 @@ route.use('/vendor/babel', nodePath('babel-standalone'));
 
 // Video.JS
 route.use('/vendor/videojs', nodePath('video.js','dist'));
+route.use('/vendor/videojs/themes', nodePath('@videojs','themes'));
 
 // React
 route.use('/vendor/react', nodePath('react','umd'));
