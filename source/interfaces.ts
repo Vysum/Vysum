@@ -58,8 +58,8 @@ export interface Video {
     category: string;
     genre: string;
     views: number;
-    upvote: number;
-    downvote: number;
+    upvotes: number;
+    downvotes: number;
     stream: boolean;
 }
 
