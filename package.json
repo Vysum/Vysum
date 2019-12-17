@@ -31,6 +31,7 @@
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "howler": "^2.1.2",
+    "javascript-obfuscator": "^0.18.7",
     "jquery": "^3.4.1",
     "markdown-tree": "0.0.0",
     "moment": "^2.24.0",
