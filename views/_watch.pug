@@ -1,0 +1,50 @@
+div#watch.container-fluid.row.page-region
+    div.col-md-12
+        video#mainVidFeed.video-js.vjs-theme-forest(controls, autoplay, data-setup='{"autoplay": true}')
+            source#mainVidSource
+        div.container-fluid.row.mt-3
+            div.col-md-12
+                h4#mainVidTitle Demo Title Name
+        hr
+        div.container-fluid.row
+            div.col-md-6.text-left
+                span.text-muted
+                    span#mainVidViewCount 0
+                    span &nbsp;
+                    span#mainVidViewType views
+                    br
+                    span#mainVidUploadType Posted on
+                    span &nbsp;
+                    span#mainVidUploadTime Jan 1 1970
+            div.col-md-6.text-right
+                span.text-muted
+                    a#mainVidUpvote(href="#")
+                        i.far.fa-plus-hexagon
+                        span &nbsp;
+                        span#mainVidUpvotes 0
+                    span &nbsp;&bull;&nbsp;
+                    a#mainVidDownvote(href="#")
+                        i.far.fa-minus-hexagon
+                        span &nbsp;
+                        span#mainVidDownvotes 0
+                    br
+                    span#mainVideoAgeRating
+                        span.text-muted Age Rating: 
+                        span &nbsp;
+                        span#mainVidRating.badge.badge-rating-mature Mature
+        hr
+        div.container-fluid.row
+            div.col-md-6.text-left
+                span#mainVidUploader
+                    a#mainVidUploaderName.text-link(href="/") Vysum Team 
+                    span#mainVidUploaderBadge.text-muted
+                        i.fas.fa-check-circle(data-target="tooltip", title="Verified")
+            div.col-md-6.text-right
+                button#mainVidSubscribe.btn.btn-primary.btn-sm 
+                    span#mainVidSubStatusSubscribe SUBSCRIBE 
+                    span#mainVidSubBadge.badge.badge-light 0
+            div.col-md-12.text-left
+                p#mainVidDescription Demo Description Content
+            div.col-md-12.text-left
+            div#mainVidComments.col-md-12.text-left
+    div.col-md-4
