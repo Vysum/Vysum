@@ -78,12 +78,3 @@ function renderViewStatus(video) {
     else if(video.private) { return setBadge('badge-dark', 'PRIVATE') }
     else { return '' }
 }
-
-function renderMainVideoData(video) {
-    $('#mainVidTitle').html(video.title);
-    $('#mainVidUpvotes').html(handleNumber(false, video.upvotes));
-    $('#mainVidDownvotes').html(handleNumber(false, video.downvotes));
-    $('#mainVidViews').html(renderViews(video));
-    $('#mainVidViewBadge').html(renderViewStatus(video));
-    $('#mainVidDescription').html(video.description);
-}
