@@ -58,9 +58,13 @@ export interface Video {
     category: string;
     genre: string;
     views: number;
+    viewers: number;
     upvotes: number;
     downvotes: number;
     stream: boolean;
+    live: boolean;
+    unlisted: boolean;
+    private: boolean;
 }
 
 export interface PugSettings {
