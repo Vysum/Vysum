@@ -115,9 +115,11 @@ hr {
 .badge-brand { background-color: var(--color-brand-main) !important; }
 .badge-gradient { background: linear-gradient(to right, var(--color-brand-green), var(--color-brand-yellow)) !important; }
 
-.badge-rating-general { background-color: var(--color-success) !important; }
-.badge-rating-pg { background-color: var(--color-brand-yellow) !important; }
-.badge-rating-children { background-color: var(--color-info) !important; }
+.badge-rating-general { background-color: var(--color-rating-general) !important; }
+.badge-rating-pg { background-color: var(--color-rating-pg) !important; }
+.badge-rating-children { background-color: var(--color-rating-children) !important; }
+.badge-rating-teen { background-color: var(--color-rating-teen) !important; }
+.badge-rating-mature { background-color: var(--color-rating-mature) !important; }
 
 
 /* Video Size Repair */
