@@ -40,11 +40,14 @@ a:hover, a:active {
 
 /* Line Break Correction */
 hr { 
-    background-color: rgba(255, 255, 255, 0.3) !important;
-    color: rgba(255, 255, 255, 0.3) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.1) !important;
     margin-top: 0.3em !important;
     margin-bottom: 0.3em !important; 
 }
+
+/* Row CSS Correction */
+.row { margin-left: 0 !important; margin-right: 0 !important; }
 
 /* Noty Colors */
 .noty_type_alert { 
