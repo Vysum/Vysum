@@ -6,8 +6,9 @@
   "scripts": {
     "setup": "npm install -d && npm i -g -d typescript",
     "ts": "tsc --rootDir source --outDir build",
+    "js": "node ./obfuscate.js",
     "changelog": "node ./changelog.js",
-    "build": "npm run changelog && npm run ts"
+    "build": "npm run ts && npm run js && npm run changelog"
   },
   "repository": {
     "type": "git",
